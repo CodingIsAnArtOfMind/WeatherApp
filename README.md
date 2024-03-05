@@ -1,13 +1,24 @@
 # WeatherApp
-Write a server by using SpringBoot Java and integrate Weather API from Rapid API. On the
-basis of that integration, expose your RESTful APIs as follows with JSON response.
+# Spring Boot Weather API Integration
 
-Authentication Method: Header-based authentication with random client id and random
-client secret.
-API 1: Get the Weather forecast summary of Any city using API
-(RapidApiGetForecastSummaryByLocationName)
-API 2: Get hourly Weather forecast details of Any city using API
+This project demonstrates how to integrate a Weather API from Rapid API into a Spring Boot application.
+
+## Authentication Method
+
+Header-based authentication is used with random client ID and random client secret.
+
+## APIs Exposed
+
+### 1. Get Weather Forecast Summary by City
+
+**Endpoint:** `/weather-summary`
+
+**Method:** `GET`
+
+### 1. Get hourly Weather forecast details of Any city using API
+
 (RapidApiGetHourlyForecastByLocationName)
 API Document: https://rapidapi.com/wettercom-wettercom-default/api/forecast9
 (RapidApiGetForecastSummaryByLocationName &
 RapidApiGetHourlyForecastByLocationName)
+
