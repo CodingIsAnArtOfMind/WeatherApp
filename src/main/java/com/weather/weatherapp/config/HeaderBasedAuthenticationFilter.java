@@ -5,10 +5,11 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
-
+@Component
 public class HeaderBasedAuthenticationFilter extends OncePerRequestFilter {
 
     @Override
@@ -26,7 +27,7 @@ public class HeaderBasedAuthenticationFilter extends OncePerRequestFilter {
     private boolean isValidCredentials(String clientId, String clientSecret) {
         // Hardcoded validation logic - Replace these strings with your actual client ID and client secret
         String validClientId = "clientId";
-        String validClientSecret = "clientSecret";
+        String validClientSecret = "secretId";
 
 
         return clientId.equals(validClientId) && clientSecret.equals(validClientSecret);
