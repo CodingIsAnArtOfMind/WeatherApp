@@ -7,6 +7,12 @@ This project demonstrates how to integrate a Weather API from Rapid API into a S
 
 Header-based authentication is used with random client ID and random client secret.
 
+Password for Client Id and Client Secret which will needed while running the application:-
+key:X-Client-ID value:clientId
+key:X-Client-Secret value:secretId
+
+##Note: Pass above value in header for Header Based Authorization
+
 ## APIs Exposed
 
 ### 1. Get Weather Forecast Summary by City
@@ -21,4 +27,10 @@ Header-based authentication is used with random client ID and random client secr
 API Document: https://rapidapi.com/wettercom-wettercom-default/api/forecast9
 (RapidApiGetForecastSummaryByLocationName &
 RapidApiGetHourlyForecastByLocationName)
+
+
+## Note
+I am able to connect to the backend but due to not having a Subscription its giving (403) 
+Tested same through postman got below error
+"message": "You are not subscribed to this API."
 
